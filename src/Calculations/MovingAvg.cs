@@ -2087,7 +2087,7 @@ public static partial class Calculations
             srcYList.AddRounded(srcY);
 
             var prevYEma = yEmaList.LastOrDefault();
-            var yEma = CalculateEMA(y, prevYEma, length);
+            var yEma = CalculateEMA(y, prevYEma, length/2);
             yEmaList.AddRounded(yEma);
 
             var srcEma = currentValue - yEma;
